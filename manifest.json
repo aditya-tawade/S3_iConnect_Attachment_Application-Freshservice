@@ -3,6 +3,9 @@
   "product": {
     "freshservice": {
       "events": {
+        "onTicketCreate": {
+          "handler": "onTicketCreateCallback"
+        },
         "onConversationCreate": {
           "handler": "onConversationCreateCallback"
         }

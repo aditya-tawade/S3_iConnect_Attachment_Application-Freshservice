@@ -1,12 +1,29 @@
-// const fs = require("fs");
-// const AWS = require("aws-sdk");
-
-// const s3 = new AWS.S3({
-//   accessKeyId: "AKIA353WZ76QOIGZSGFV",
-//   secretAccessKey: "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",
-// });
-
 exports = {
+  onTicketCreateCallback: function (payload) {
+    var headers = {
+      Authorization: "Basic <%= encode('UfFTA68X62IYm3LCUWT') %>",
+    };
+    var ticketID = payload.data.ticket.id;
+    console.log("Ticket ID", ticketID);
+    var options = { headers: headers };
+    var url = `https://iconnectsolutionspvtltd.freshservice.com/api/v2/tickets/${ticketID}`;
+    $request.get(url, options).then(
+      function (data) {
+        data = JSON.parse(data.response);
+        // console.log(data);
+        // var AID = data.ticket.attachments;
+        // console.log("Line 14", AID);
+        var attachmentsID = data.ticket.attachments.map(
+          (x) => x.attachment_url
+        );
+        var slice_attachmentsID = attachmentsID.join("\n\n");
+        console.log("Attachment on Create URL:", slice_attachmentsID);
+      },
+      function (error) {
+        console.log(error);
+      }
+    );
+  },
   onConversationCreateCallback: function (payload) {
     // console.log(payload);
     var headers = {
@@ -30,21 +47,13 @@ exports = {
       .then(
         function (data) {
           data = JSON.parse(data.response);
-          // console.log("DARTA---------------", data);
           return data;
-          // const result = data.conversations
-          //   .map((item) =>
-          //     item.attachments.map((attachment) => attachment.attachment_url)
-          //   )
-          //   .flat();
-          // var attach = result.join("\n\n");
         },
         function (error) {
           console.log(error);
         }
       )
       .then((conversation) => {
-        // console.log("TETST", conversation);
         var s3_url = `https://nodejs.adityatawade.com/s3_upload`;
         var s3_options = {
           json: {

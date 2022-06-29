@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.06% </span>
+                <span class="strong">39.31% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>189/363</span>
+                <span class='fraction'>217/552</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">49.25% </span>
+                <span class="strong">37.08% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>66/134</span>
+                <span class='fraction'>79/213</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">59.09% </span>
+                <span class="strong">58.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>52/88</span>
+                <span class='fraction'>53/90</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -131,14 +131,28 @@
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
 <a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">10x</span>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-yes">22x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">27x</span>
 <span class="cline-any cline-yes">27x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">33x</span>
@@ -180,7 +194,7 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -199,82 +213,110 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// const fs = require("fs");
-// const AWS = require("aws-sdk");
-&nbsp;
-<span class="cstat-no" title="statement not covered" >// const s3<span class="cstat-no" title="statement not covered" > = new AWS.S3({</span></span>
-//   access<span class="cstat-no" title="statement not covered" >KeyId: "AKIA353WZ76QO<span class="fstat-no" title="function not covered" >IG</span>ZSGFV",</span>
-//   secretAccessKey: "Vo8Dmbm30Hbuc7LwgrQypNdFCaqEKJRG0pgZn+0x",
-// });<span class="cstat-no" title="statement not covered" ></span>
-&nbsp;
-exports = {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
-  onConversationCreate<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >Ca</span>llback: function (payload) {<span class="fstat-no" title="function not covered" ></span></span>
-    //<span class="cstat-no" title="statement not covered" > console.log<span class="cstat-no" title="statement not covered" >(payload)<span class="fstat-no" title="function not covered" >;<span class="cstat-no" title="statement not covered" ></span></span></span></span>
-<span class="cstat-no" title="statement not covered" >    var headers <span class="cstat-no" title="statement not covered" >= {<span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >      Authori<span class="cstat-no" title="statement not covered" >zat<span class="cstat-no" title="statement not covered" >ion: "Basic</span> &lt;%= e</span>ncode('UfFTA68</span>X62IYm3LCUWT') %&gt;",
-<span class="cstat-no" title="statement not covered" >    };<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    //<span class="fstat-no" title="function not covered" >co</span>nsole.log(JSON.stringify(payload))</span></span></span>
-<span class="cstat-no" title="statement not covered" >    va<span class="fstat-no" title="function not covered" >r </span>option<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >s </span>= { head<span class="cstat-no" title="statement not covered" >ers: headers };</span></span></span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">exports = {
+  onTicketCreateCallback: <span class="fstat-no" title="function not covered" >fu</span>nction (payload) {
+<span class="cstat-no" title="statement not covered" >    var headers = {</span>
+<span class="cstat-no" title="statement not covered" >      Autho<span class="cstat-no" title="statement not covered" >rization: "Basic &lt;%= encode('UfFTA68X62IYm3LCUWT') %&gt;",</span></span>
+    };<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    var ticketID = payload.data.ticket.id;
+    console.log("T<span class="cstat-no" title="statement not covered" >icket ID", ticketID);</span>
+    var options = { headers: headers };
+    var url = `https:/<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >/i</span>connectsolutionspvtltd.freshservice.com/api/v2/tickets/${ticketID}`;</span>
+    $request.get(url, <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >op</span>tions).then(<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >      function (da<span class="cstat-no" title="statement not covered" >ta) {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >        data = J<span class="cstat-no" title="statement not covered" >SON<span class="cstat-no" title="statement not covered" >.parse(data.r<span class="fstat-no" title="function not covered" >e</span>s</span>ponse);</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        // co<span class="cstat-no" title="statement not covered" >nso<span class="cstat-no" title="statement not covered" >le.log(data</span>);</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        //<span class="fstat-no" title="function not covered" > v</span>a<span class="cstat-no" title="statement not covered" >r<span class="cstat-no" title="statement not covered" > AI<span class="cstat-no" title="statement not covered" >D<span class="cstat-no" title="statement not covered" > = data.t</span>i</span>cket.a</span>tta</span>chments;</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        // console.log("Line 14"<span class="fstat-no" title="function not covered" >, </span>AID);</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        var at<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >ta</span>chmentsI<span class="cstat-no" title="statement not covered" >D = data.ticket.attachments.map(</span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          (x) <span class="fstat-no" title="function not covered" >=&gt;</span> <span class="fstat-no" title="function not covered" >x<span class="cstat-no" title="statement not covered" >.</span>atta<span class="cstat-no" title="statement not covered" >c<span class="cstat-no" title="statement not covered" >hment_url</span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>        );<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        var <span class="cstat-no" title="statement not covered" >slice_at</span>tachment</span>sID =<span class="fstat-no" title="function not covered" > a</span>tta</span>chme</span>ntsID.j<span class="cstat-no" title="statement not covered" >oin("\n\n");</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        console.log<span class="cstat-no" title="statement not covered" >(</span>"At<span class="cstat-no" title="statement not covered" >tachment on Create URL:", slice_</span>attachmentsID);</span>
+<span class="fstat-no" title="function not covered" >      },<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span>
+<span class="fstat-no" title="function not covered" >      fu<span class="cstat-no" title="statement not covered" ></span>ncti<span class="cstat-no" title="statement not covered" >on <span class="fstat-no" title="function not covered" >(e</span>rr<span class="cstat-no" title="statement not covered" >or<span class="cstat-no" title="statement not covered" >) {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        console.log<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>rror)<span class="fstat-no" title="function not covered" >;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      }<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span>
+    );<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span>
+  },<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span></span></span>
+  on<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >Ti<span class="fstat-no" title="function not covered" >ck<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>etUp<span class="cstat-no" title="statement not covered" >dateCall</span>back: <span class="fstat-no" title="function not covered" >fu</span></span>nctio<span class="fstat-no" title="function not covered" >n </span>(paylo</span>ad) {<span class="cstat-no" title="statement not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >    cons<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >ole.log(<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      "L</span>ogging<span class="cstat-no" title="statement not covered" > ar<span class="cstat-no" title="statement not covered" >g<span class="cstat-no" title="statement not covered" >ume<span class="cstat-no" title="statement not covered" >nts from onTicke</span>tU</span>pd</span>ate event: " + JSON.stringify(payload)</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    );<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span>
+  },<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+  onCo<span class="fstat-no" title="function not covered" >nv<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>ersati<span class="cstat-no" title="statement not covered" >onCr<span class="cstat-no" title="statement not covered" >ea</span>teCa<span class="cstat-no" title="statement not covered" >llba</span>ck: <span class="fstat-no" title="function not covered" >fu</span>nct</span>ion (payload) {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >    // c<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >on</span>sole.log<span class="cstat-no" title="statement not covered" >(<span class="cstat-no" title="statement not covered" >p</span>ayloa</span>d);</span></span></span></span>
+<span class="cstat-no" title="statement not covered" >    va<span class="fstat-no" title="function not covered" >r </span>headers = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      Au<span class="cstat-no" title="statement not covered" ></span>th<span class="cstat-no" title="statement not covered" >orization:<span class="fstat-no" title="function not covered" > "</span>B</span>asic </span>&lt;%= encode('U</span>fFTA68X62IYm3LCUWT') %&gt;",</span></span>
+<span class="cstat-no" title="statement not covered" >    };<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >    //<span class="cstat-no" title="statement not covered" >co<span class="fstat-no" title="function not covered" >ns<span class="cstat-no" title="statement not covered" ></span>ole.log</span>(<span class="cstat-no" title="statement not covered" >JSON.s<span class="cstat-no" title="statement not covered" >tringify(payl</span>oa</span>d))<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var op<span class="cstat-no" title="statement not covered" >tions = <span class="cstat-no" title="statement not covered" >{<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" > headers: h</span>eaders };</span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var <span class="cstat-no" title="statement not covered" >ticket<span class="cstat-no" title="statement not covered" >ID = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >paylo<span class="cstat-no" title="statement not covered" >ad.d</span>at</span>a.conversat</span>ion</span>.t</span>icket_id;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var <span class="fstat-no" title="function not covered" >at</span>ta<span class="fstat-no" title="function not covered" >ch</span>ments<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >ID = <span class="cstat-no" title="statement not covered" >p<span class="cstat-no" title="statement not covered" >aylo</span>ad.data.conversat</span>i</span>on.attachments<span class="fstat-no" title="function not covered" >.m</span>ap(<span class="fstat-no" title="function not covered" >(x<span class="cstat-no" title="statement not covered" ></span>) =&gt; <span class="cstat-no" title="statement not covered" >x.</span>i</span>d)</span>;</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var <span class="fstat-no" title="function not covered" >sl<span class="cstat-no" title="statement not covered" ></span>ice_T<span class="fstat-no" title="function not covered" >P </span>= <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >at<span class="cstat-no" title="statement not covered" >tachments</span>ID.join</span>("\n</span>\n");<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var fi<span class="cstat-no" title="statement not covered" >leName = <span class="cstat-no" title="statement not covered" >payloa<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >d.dat</span>a.conversat</span>ion.at</span></span>tachments.map(<span class="fstat-no" title="function not covered" >(x</span>) =&gt; <span class="cstat-no" title="statement not covered" >x.name)</span>;</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    cons<span class="fstat-no" title="function not covered" >ol</span>e.log("<span class="cstat-no" title="statement not covered" >Ticket I<span class="cstat-no" title="statement not covered" >D:",</span> ticketI</span>D);</span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    var sl<span class="cstat-no" title="statement not covered" >ice_<span class="cstat-no" title="statement not covered" >fileName = <span class="cstat-no" title="statement not covered" >file</span>Name.joi</span>n("\n\n</span>");</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    consol<span class="cstat-no" title="statement not covered" >e.log("TP ID:</span>", slice_TP);</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    cons<span class="fstat-no" title="function not covered" >ol</span>e.lo<span class="cstat-no" title="statement not covered" >g("<span class="cstat-no" title="statement not covered" >File Na</span>me:", slice_fileName);</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >    var <span class="fstat-no" title="function not covered" >ur<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>l = <span class="cstat-no" title="statement not covered" >`https://iconnec</span>tsolutionspvtltd.freshser</span>vice.com/api/v2/tickets/${ticketID}/conversations`;</span></span>
+<span class="cstat-no" title="statement not covered" >    $reque<span class="cstat-no" title="statement not covered" >st</span></span>
+      .g<span class="fstat-no" title="function not covered" >e<span class="fstat-no" title="function not covered" >t<span class="cstat-no" title="statement not covered" ></span>(u<span class="fstat-no" title="function not covered" >rl</span></span>, opti<span class="cstat-no" title="statement not covered" >ons</span>)</span>
+<span class="cstat-no" title="statement not covered" >      .t<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >h<span class="fstat-no" title="function not covered" >e<span class="cstat-no" title="statement not covered" ></span>n(<span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >        fu<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>nc</span>tion (<span class="cstat-no" title="statement not covered" >dat<span class="cstat-no" title="statement not covered" >a)</span> {<span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          da<span class="cstat-no" title="statement not covered" >ta = JSON.p</span>ar<span class="cstat-no" title="statement not covered" >se(da</span>ta.response);</span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          re<span class="fstat-no" title="function not covered" >tu</span>rn data<span class="cstat-no" title="statement not covered" >;</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span>        },<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        fu<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>nc<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >ti</span>on (err</span>or) {</span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          console.log<span class="cstat-no" title="statement not covered" >(error);</span></span></span>
+        }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+<span class="fstat-no" title="function not covered" >      )<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >      .t<span class="cstat-no" title="statement not covered" >he<span class="fstat-no" title="function not covered" >n(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>(c</span></span>onversa<span class="cstat-no" title="statement not covered" >tion<span class="cstat-no" title="statement not covered" >) =</span>&gt; {</span></span></span></span>
+<span class="cstat-no" title="statement not covered" >        var <span class="cstat-no" title="statement not covered" >s3_url = <span class="cstat-no" title="statement not covered" >`htt<span class="cstat-no" title="statement not covered" >ps://no<span class="fstat-no" title="function not covered" ></span>de</span>js.adityatawade.com/s3_upload`;</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        var s3_options = <span class="cstat-no" title="statement not covered" >{<span class="fstat-no" title="function not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          js</span>on: {<span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >            ticket<span class="cstat-no" title="statement not covered" >ID: ticketID,</span></span>
+<span class="cstat-no" title="statement not covered" >            slice_TP: slice_TP,</span>
+<span class="fstat-no" title="function not covered" ></span>            slice_fileName: slice_fileName,
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>            conver<span class="cstat-no" title="statement not covered" >sation: conver</span>sation,</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          },<span class="cstat-no" title="statement not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >        };<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
 <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
-    va<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >r </span></span>ticketI<span class="fstat-no" title="function not covered" >D <span class="fstat-no" title="function not covered" ></span>= </span>payload.data.conver</span>sation.ticket_id;
-    va<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >r <span class="cstat-no" title="statement not covered" >atta<span class="cstat-no" title="statement not covered" >chmentsI</span>D = payload.d<span class="fstat-no" title="function not covered" >at</span>a.c</span>onve</span>rsation<span class="cstat-no" title="statement not covered" >.attachments.map((x) =&gt; x.</span>i</span>d);
-    va<span class="cstat-no" title="statement not covered" >r slice_TP = a</span>tta<span class="cstat-no" title="statement not covered" >chmentsID.join("\n\n");</span>
-    var fileNam<span class="fstat-no" title="function not covered" >e </span>= payload.data<span class="cstat-no" title="statement not covered" >.conversation.attachments.map((x) =&gt; x.name);</span>
-    console.<span class="cstat-no" title="statement not covered" >log<span class="fstat-no" title="function not covered" >("</span>Tick<span class="cstat-no" title="statement not covered" >et I<span class="cstat-no" title="statement not covered" >D:", tic<span class="fstat-no" title="function not covered" >ke</span>tID);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
-    va<span class="fstat-no" title="function not covered" >r <span class="cstat-no" title="statement not covered" ></span>slice_fileN<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >am</span>e = fileName.joi</span>n("\n\n");</span>
-    cons<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >ole.log("TP<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > </span>I</span>D:<span class="cstat-no" title="statement not covered" >", sl</span>ice_TP)<span class="cstat-no" title="statement not covered" >;</span></span></span>
-    console.log<span class="fstat-no" title="function not covered" >("</span>File<span class="cstat-no" title="statement not covered" > <span class="cstat-no" title="statement not covered" >N<span class="cstat-no" title="statement not covered" >ame:", slice_fileN</span>ame);</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span>
-    va<span class="fstat-no" title="function not covered" >r <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>url <span class="cstat-no" title="statement not covered" >= `https</span>://iconn</span>ectso<span class="fstat-no" title="function not covered" >lu</span>tionspvtltd.fr<span class="cstat-no" title="statement not covered" >eshservice.com/api/v2/tick</span>e</span>ts/${ticketID}/conversations`;
-    $req<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >uest<span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="fstat-no" title="function not covered" >      .g</span>et(url, o<span class="cstat-no" title="statement not covered" >ptio<span class="cstat-no" title="statement not covered" >ns)</span></span>
-      .t<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >hen(<span class="cstat-no" title="statement not covered" ></span></span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span>        function (data) {</span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          data = JSO</span>N.parse(</span>data.resp</span>onse);
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          // console</span>.log(</span>"DA</span>RTA---------------", data);
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          return dat<span class="fstat-no" title="function not covered" >a;</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          // const r<span class="fstat-no" title="function not covered" >es</span>ult = </span>data.conversations</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          //   .m</span>ap((item) =</span>&gt;</span>
-<span class="cstat-no" title="statement not covered" >          //     </span>item.attachments.map((attachment) =&gt; attachment.attachment_url)
-<span class="cstat-no" title="statement not covered" >          //   )</span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>          //   .flat();</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          // var attach = re</span>su</span>lt.join("\n\n"</span>);
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        },</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        fu<span class="cstat-no" title="statement not covered" ></span>nctio<span class="fstat-no" title="function not covered" >n </span>(error) {</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >          console.log(error);</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >        }<span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >      )</span>
-      .then((conversation) =&gt; {
-<span class="cstat-no" title="statement not covered" >        // consol<span class="cstat-no" title="statement not covered" >e.log("</span>TETST", conversation);</span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        var s3_url = `ht</span>tps://nodejs.adityatawade.com/s3_upload`;</span>
-        va<span class="cstat-no" title="statement not covered" >r s3_options = {</span>
-          json: {
-<span class="fstat-no" title="function not covered" >            ti</span>cketID<span class="cstat-no" title="statement not covered" >: ticketID,</span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            sl</span>ice_TP: slice_TP,<span class="fstat-no" title="function not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            slice_<span class="cstat-no" title="statement not covered" >fileName: sli<span class="fstat-no" title="function not covered" >ce</span>_fileName,</span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            conversation: conversation,</span></span>
-<span class="cstat-no" title="statement not covered" >          },<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>        };<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-<span class="fstat-no" title="function not covered" ></span>        $r<span class="cstat-no" title="statement not covered" >equest.post(s3_url, s3_options</span>).then(
-<span class="fstat-no" title="function not covered" >          fu</span>nction (data) {
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span>            console.log("S3 Resp</span>onse:", data.response);
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          },<span class="cstat-no" title="statement not covered" ></span></span></span></span></span>
-<span class="cstat-no" title="statement not covered" >          fu<span class="cstat-no" title="statement not covered" >nction (error) {<span class="fstat-no" title="function not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >            console.log(error);<span class="fstat-no" title="function not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" >          }<span class="cstat-no" title="statement not covered" ></span></span>
-        );<span class="cstat-no" title="statement not covered" ></span>
-      })<span class="cstat-no" title="statement not covered" >;</span>
-  },
-};<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >        $r<span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >eq<span class="cstat-no" title="statement not covered" ></span></span>uest.po<span class="cstat-no" title="statement not covered" >st(s3<span class="cstat-no" title="statement not covered" >_url, s3_options).then</span>(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span>
+<span class="fstat-no" title="function not covered" >          fu<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>nction <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >(data) {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>            console<span class="cstat-no" title="statement not covered" >.log("S3 Response:", d</span>ata.response);<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          },<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          fu<span class="cstat-no" title="statement not covered" ></span>nction (error<span class="cstat-no" title="statement not covered" >) {</span></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            console.log(error);</span></span></span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+        );
+      });
+  },<span class="cstat-no" title="statement not covered" ></span>
+};<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Jun 14 2022 16:58:35 GMT+0530 (India Standard Time)
+                at Wed Jun 29 2022 17:32:05 GMT+0530 (India Standard Time)
             </div>
         <script src="prettify.js"></script>
         <script>
