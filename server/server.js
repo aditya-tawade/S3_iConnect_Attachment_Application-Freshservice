@@ -1,3 +1,38 @@
+// function uploadToS3(conversation) {
+//   /*
+//     conversation: {
+//       conversations: [
+//         {
+//           ticket_id,
+//           id, // conversation_id
+//           attachments : [
+//             {
+//               name,
+//               attachment_url
+//             }
+//           ]
+//         }
+//       ]
+//     }
+//   */
+//   var s3_url = `https://nodejs.adityatawade.com/s3_upload`;
+//   var s3_options = {
+//     json: {
+//       conversation: conversation,
+//     },
+//   };
+//   console.log("DATA", s3_options.json);
+
+//   $request.post(s3_url, s3_options).then(
+//     function (data) {
+//       console.log("S3 Response:", data.response);
+//     },
+//     function (error) {
+//       console.log(error);
+//     }
+//   );
+// }
+
 exports = {
   onTicketCreateCallback: function (payload) {
     var headers = {
@@ -10,14 +45,32 @@ exports = {
     $request.get(url, options).then(
       function (data) {
         data = JSON.parse(data.response);
-        // console.log(data);
-        // var AID = data.ticket.attachments;
-        // console.log("Line 14", AID);
-        var attachmentsID = data.ticket.attachments.map(
-          (x) => x.attachment_url
+        const conversation = {
+          conversations: [
+            {
+              ticket_id: data.ticket.id,
+              id: "main",
+              attachments: data.ticket.attachments,
+            },
+          ],
+        };
+        // uploadToS3(datas);
+        var s3_url = `https://nodejs.adityatawade.com/s3_upload`;
+        var s3_options = {
+          json: {
+            conversation: conversation,
+          },
+        };
+        console.log("DATA", s3_options.json);
+
+        $request.post(s3_url, s3_options).then(
+          function (data) {
+            console.log("S3 Response:", data.response);
+          },
+          function (error) {
+            console.log(error);
+          }
         );
-        var slice_attachmentsID = attachmentsID.join("\n\n");
-        console.log("Attachment on Create URL:", slice_attachmentsID);
       },
       function (error) {
         console.log(error);
@@ -25,11 +78,9 @@ exports = {
     );
   },
   onConversationCreateCallback: function (payload) {
-    // console.log(payload);
     var headers = {
       Authorization: "Basic <%= encode('UfFTA68X62IYm3LCUWT') %>",
     };
-    //console.log(JSON.stringify(payload))
     var options = { headers: headers };
 
     var ticketID = payload.data.conversation.ticket_id;
@@ -54,15 +105,14 @@ exports = {
         }
       )
       .then((conversation) => {
+        // uploadToS3(conversation);
         var s3_url = `https://nodejs.adityatawade.com/s3_upload`;
         var s3_options = {
           json: {
-            ticketID: ticketID,
-            slice_TP: slice_TP,
-            slice_fileName: slice_fileName,
             conversation: conversation,
           },
         };
+        console.log("DATA", s3_options.json);
 
         $request.post(s3_url, s3_options).then(
           function (data) {
